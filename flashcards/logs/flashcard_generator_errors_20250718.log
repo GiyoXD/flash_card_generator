@@ -1,0 +1,40 @@
+2025-07-18 07:54:45 - flashcard_generator.gemini_client - [31mERROR[0m - generate_word_pairs:117 - All 3 attempts failed for topic: animals
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 07:54:45 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: step=word_generation, topic=animals, count=3
+Exception: (<class 'RuntimeError'>, RuntimeError('Failed to generate word pairs after 3 attempts'), <traceback object at 0x000001FA31C94700>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: animals
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 07:54:45 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: topic=animals, count=3, stats={'total_requested': 3, 'words_generated': 0, 'images_downloaded': 0, 'flashcards_created': 0, 'errors': 0, 'api_errors': 1, 'image_errors': 0, 'validation_errors': 0, 'start_time': datetime.datetime(2025, 7, 18, 7, 54, 40, 315914), 'end_time': datetime.datetime(2025, 7, 18, 7, 54, 45, 390098)}
+Exception: (<class 'RuntimeError'>, RuntimeError('Failed to generate word pairs after 3 attempts'), <traceback object at 0x000001FA31C94700>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: animals
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 07:54:45 - flashcard_generator.flashcard_generator - [31mERROR[0m - run:302 - Flashcard generation process failed: Failed to generate word pairs after 3 attempts
+Exception: None
+--------------------------------------------------------------------------------

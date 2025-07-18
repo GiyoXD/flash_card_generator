@@ -1,0 +1,87 @@
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.5-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 00:11:03 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-18 00:11:03 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards/cache, max_age=24h
+2025-07-18 00:11:03 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards/cache, max_age=168h
+2025-07-18 00:11:03 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards/cache, max_age=168h
+2025-07-18 00:11:03 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 00:11:03 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animals', count: 5
+2025-07-18 00:11:10 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 00:11:10 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 00:11:10 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='animals', count=5
+2025-07-18 00:12:03 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'dog', 'chinese': '狗', 'pinyin': 'gǒu'}: Pinyin contains invalid characters
+2025-07-18 00:12:03 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'cat', 'chinese': '猫', 'pinyin': 'māo'}: Pinyin contains invalid characters
+2025-07-18 00:12:03 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'elephant', 'chinese': '大象', 'pinyin': 'dà xiàng'}: Pinyin contains invalid characters
+2025-07-18 00:12:03 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'tiger', 'chinese': '老虎', 'pinyin': 'lǎo hǔ'}: Pinyin contains invalid characters
+2025-07-18 00:12:03 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'bird', 'chinese': '鸟', 'pinyin': 'niǎo'}: Pinyin contains invalid characters
+2025-07-18 00:12:03 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:106 - No valid word pairs generated on attempt 1
+2025-07-18 07:54:39 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 07:54:39 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 07:54:40 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-18 07:54:40 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards\cache, max_age=24h
+2025-07-18 07:54:40 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 07:54:40 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 07:54:40 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 07:54:40 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animals', count: 3
+2025-07-18 07:54:42 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 07:54:42 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 07:54:42 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='animals', count=3
+2025-07-18 07:54:43 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'dog', 'chinese': '狗', 'pinyin': 'gǒu3'}: Pinyin contains invalid characters
+2025-07-18 07:54:43 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'cat', 'chinese': '猫', 'pinyin': 'māo1'}: Pinyin contains invalid characters
+2025-07-18 07:54:43 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'bird', 'chinese': '鸟', 'pinyin': 'niǎo3'}: Pinyin contains invalid characters
+2025-07-18 07:54:43 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:106 - No valid word pairs generated on attempt 1
+2025-07-18 07:54:44 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'dog', 'chinese': '狗', 'pinyin': 'gǒu'}: Pinyin contains invalid characters
+2025-07-18 07:54:44 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'cat', 'chinese': '猫', 'pinyin': 'māo'}: Pinyin contains invalid characters
+2025-07-18 07:54:44 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'elephant', 'chinese': '大象', 'pinyin': 'dà xiàng'}: Pinyin contains invalid characters
+2025-07-18 07:54:44 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:106 - No valid word pairs generated on attempt 2
+2025-07-18 07:54:45 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'dog', 'chinese': '狗', 'pinyin': 'gǒu3'}: Pinyin contains invalid characters
+2025-07-18 07:54:45 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'cat', 'chinese': '猫', 'pinyin': 'māo1'}: Pinyin contains invalid characters
+2025-07-18 07:54:45 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'elephant', 'chinese': '大象', 'pinyin': 'dà xiàng4'}: Pinyin contains invalid characters
+2025-07-18 07:54:45 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:106 - No valid word pairs generated on attempt 3
+2025-07-18 07:54:45 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:111 - Attempt 3 failed: Failed to generate valid word pairs for topic: animals
+2025-07-18 07:54:45 - flashcard_generator.gemini_client - [31mERROR[0m - generate_word_pairs:117 - All 3 attempts failed for topic: animals
+2025-07-18 07:54:45 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: step=word_generation, topic=animals, count=3
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: animals
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 07:54:45 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: topic=animals, count=3, stats={'total_requested': 3, 'words_generated': 0, 'images_downloaded': 0, 'flashcards_created': 0, 'errors': 0, 'api_errors': 1, 'image_errors': 0, 'validation_errors': 0, 'start_time': datetime.datetime(2025, 7, 18, 7, 54, 40, 315914), 'end_time': datetime.datetime(2025, 7, 18, 7, 54, 45, 390098)}
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: animals
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 07:54:45 - flashcard_generator.flashcard_generator - [31mERROR[0m - run:302 - Flashcard generation process failed: Failed to generate word pairs after 3 attempts

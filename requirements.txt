@@ -1,0 +1,25 @@
+# AI and API dependencies
+google-generativeai>=0.3.0
+
+# HTTP requests and web scraping
+requests>=2.31.0
+
+# Data manipulation and CSV handling
+pandas>=2.0.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Image processing (optional, for future enhancements)
+Pillow>=10.0.0
+
+# Progress bars and CLI enhancements
+tqdm>=4.65.0
+
+# Async support for concurrent operations
+aiohttp>=3.8.0
+asyncio-throttle>=1.0.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-mock>=3.10.0

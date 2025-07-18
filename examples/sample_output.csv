@@ -1,0 +1,11 @@
+English,Chinese,Pinyin,Image_Path,Topic,Created_Date
+cat,猫,mao1,./images/cat_a1b2c3d4.jpg,animals,2024-01-15 14:30:22
+dog,狗,gou3,./images/dog_e5f6g7h8.jpg,animals,2024-01-15 14:30:25
+bird,鸟,niao3,,animals,2024-01-15 14:30:28
+fish,鱼,yu2,./images/fish_i9j0k1l2.jpg,animals,2024-01-15 14:30:31
+rabbit,兔子,tu4 zi,./images/rabbit_m3n4o5p6.jpg,animals,2024-01-15 14:30:34
+apple,苹果,ping2 guo3,./images/apple_q7r8s9t0.jpg,food,2024-01-15 14:35:12
+banana,香蕉,xiang1 jiao1,./images/banana_u1v2w3x4.jpg,food,2024-01-15 14:35:15
+rice,米饭,mi3 fan4,./images/rice_y5z6a7b8.jpg,food,2024-01-15 14:35:18
+water,水,shui3,./images/water_c9d0e1f2.jpg,food,2024-01-15 14:35:21
+tea,茶,cha2,./images/tea_g3h4i5j6.jpg,food,2024-01-15 14:35:24
