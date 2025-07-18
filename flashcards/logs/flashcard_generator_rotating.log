@@ -85,3 +85,273 @@ Traceback (most recent call last):
     raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
 RuntimeError: Failed to generate word pairs after 3 attempts
 2025-07-18 07:54:45 - flashcard_generator.flashcard_generator - [31mERROR[0m - run:302 - Flashcard generation process failed: Failed to generate word pairs after 3 attempts
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:16:12 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-18 08:16:12 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards\cache, max_age=24h
+2025-07-18 08:16:12 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:16:12 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:16:12 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:16:12 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'nature', count: 10
+2025-07-18 08:16:14 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 08:16:14 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 08:16:14 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='nature', count=10
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'nature', 'chinese': '自然', 'pinyin': 'zìrán'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'tree', 'chinese': '树', 'pinyin': 'shù'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'flower', 'chinese': '花', 'pinyin': 'huā'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'animal', 'chinese': '动物', 'pinyin': 'dòngwù'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'mountain', 'chinese': '山', 'pinyin': 'shān'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'river', 'chinese': '河', 'pinyin': 'hé'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'ocean', 'chinese': '海洋', 'pinyin': 'hǎiyáng'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'forest', 'chinese': '森林', 'pinyin': 'sēnlín'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'sun', 'chinese': '太阳', 'pinyin': 'tàiyáng'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'sky', 'chinese': '天空', 'pinyin': 'tiānkōng'}: Pinyin contains invalid characters
+2025-07-18 08:16:16 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:106 - No valid word pairs generated on attempt 1
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'tree', 'chinese': '树', 'pinyin': 'shù'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'flower', 'chinese': '花', 'pinyin': 'huā'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'sun', 'chinese': '太阳', 'pinyin': 'tàiyáng'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'mountain', 'chinese': '山', 'pinyin': 'shān'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'river', 'chinese': '河', 'pinyin': 'hé'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'forest', 'chinese': '森林', 'pinyin': 'sēnlín'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'ocean', 'chinese': '海洋', 'pinyin': 'hǎiyáng'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'animal', 'chinese': '动物', 'pinyin': 'dòngwù'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'plant', 'chinese': '植物', 'pinyin': 'zhíwù'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'sky', 'chinese': '天空', 'pinyin': 'tiānkōng'}: Pinyin contains invalid characters
+2025-07-18 08:16:18 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:106 - No valid word pairs generated on attempt 2
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'tree', 'chinese': '树', 'pinyin': 'shù'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'flower', 'chinese': '花', 'pinyin': 'huā'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'river', 'chinese': '河', 'pinyin': 'hé'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'mountain', 'chinese': '山', 'pinyin': 'shān'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'sun', 'chinese': '太阳', 'pinyin': 'tàiyáng'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'forest', 'chinese': '森林', 'pinyin': 'sēnlín'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'ocean', 'chinese': '海洋', 'pinyin': 'hǎiyáng'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'animal', 'chinese': '动物', 'pinyin': 'dòngwù'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'plant', 'chinese': '植物', 'pinyin': 'zhíwù'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - _parse_word_pairs_response:239 - Error creating WordPair from {'english': 'sky', 'chinese': '天空', 'pinyin': 'tiānkōng'}: Pinyin contains invalid characters
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:106 - No valid word pairs generated on attempt 3
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [33mWARNING[0m - generate_word_pairs:111 - Attempt 3 failed: Failed to generate valid word pairs for topic: nature
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [31mERROR[0m - generate_word_pairs:117 - All 3 attempts failed for topic: nature
+2025-07-18 08:16:21 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: step=word_generation, topic=nature, count=10
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: nature
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 08:16:21 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: topic=nature, count=10, stats={'total_requested': 10, 'words_generated': 0, 'images_downloaded': 0, 'flashcards_created': 0, 'errors': 0, 'api_errors': 1, 'image_errors': 0, 'validation_errors': 0, 'start_time': datetime.datetime(2025, 7, 18, 8, 16, 12, 688362), 'end_time': datetime.datetime(2025, 7, 18, 8, 16, 21, 308113)}
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: nature
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 08:16:21 - flashcard_generator.flashcard_generator - [31mERROR[0m - run:302 - Flashcard generation process failed: Failed to generate word pairs after 3 attempts
+2025-07-18 08:19:52 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:19:52 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:19:53 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-18 08:19:53 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards\cache, max_age=24h
+2025-07-18 08:19:53 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:19:53 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:19:53 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animals', count: 3
+2025-07-18 08:19:53 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 08:19:53 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 08:19:53 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='animals', count=3
+2025-07-18 08:19:55 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:103 - Successfully generated 3 word pairs for topic: animals
+2025-07-18 08:19:55 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 1 cache entries to disk
+2025-07-18 08:19:55 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 3 word pairs for topic='animals', count=3
+2025-07-18 08:19:55 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 3 word pairs for topic: animals
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 3 queries
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=dog&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=elephant&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:152 - Failed to fetch image from pixabay for 'dog': 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=dog&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:155 - No image found for query: 'dog'
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:152 - Failed to fetch image from pixabay for 'elephant': 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=elephant&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:155 - No image found for query: 'elephant'
+2025-07-18 08:19:56 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=cat&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:19:56 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:152 - Failed to fetch image from pixabay for 'cat': 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=cat&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:19:56 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:155 - No image found for query: 'cat'
+2025-07-18 08:19:56 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 0/3 successful in 0.70s
+2025-07-18 08:19:56 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=3, words_generated=3, images_downloaded=0, flashcards_created=3, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-18 08:19:53.056574, end_time=2025-07-18 08:19:56.019922
+2025-07-18 08:19:56 - flashcard_generator - [32mINFO[0m - generate_flashcards:269 - Successfully created 3 flashcards for topic: animals
+2025-07-18 08:19:56 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:111 - CSV data validation passed for 3 rows
+2025-07-18 08:19:56 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:82 - Successfully exported 3 flashcards to flashcards\flashcards_20250718_081956.csv
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:21:31 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 1 cache entries from disk
+2025-07-18 08:21:31 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards\cache, max_age=24h
+2025-07-18 08:21:31 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:21:31 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:21:31 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:21:31 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animals', count: 3
+2025-07-18 08:21:32 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 08:21:32 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 08:21:32 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:55 - Cache hit for topic='animals', count=3
+2025-07-18 08:21:32 - flashcard_generator - [32mINFO[0m - generate_flashcards:148 - Cache hit: Retrieved 3 word pairs for topic: animals
+2025-07-18 08:21:32 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 3 queries
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=dog&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:152 - Failed to fetch image from pixabay for 'dog': 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=dog&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:155 - No image found for query: 'dog'
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=elephant&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:152 - Failed to fetch image from pixabay for 'elephant': 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=elephant&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:155 - No image found for query: 'elephant'
+2025-07-18 08:21:34 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=cat&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:21:34 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:152 - Failed to fetch image from pixabay for 'cat': 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=cat&image_type=photo&per_page=3&safesearch=true'
+2025-07-18 08:21:34 - flashcard_generator.async_image_fetcher - [33mWARNING[0m - _fetch_single_image:155 - No image found for query: 'cat'
+2025-07-18 08:21:34 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 0/3 successful in 1.55s
+2025-07-18 08:21:34 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=3, words_generated=3, images_downloaded=0, flashcards_created=3, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-18 08:21:31.329301, end_time=2025-07-18 08:21:34.146645
+2025-07-18 08:21:34 - flashcard_generator - [32mINFO[0m - generate_flashcards:269 - Successfully created 3 flashcards for topic: animals
+2025-07-18 08:21:34 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:111 - CSV data validation passed for 3 rows
+2025-07-18 08:21:34 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:82 - Successfully exported 3 flashcards to flashcards\flashcards_20250718_082134.csv
+2025-07-18 08:24:26 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:24:26 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:24:27 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 1 cache entries from disk
+2025-07-18 08:24:27 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards\cache, max_age=24h
+2025-07-18 08:24:27 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:24:27 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:24:27 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'colors', count: 3
+2025-07-18 08:24:27 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 08:24:27 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 08:24:27 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='colors', count=3
+2025-07-18 08:24:29 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:103 - Successfully generated 3 word pairs for topic: colors
+2025-07-18 08:24:29 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 2 cache entries to disk
+2025-07-18 08:24:29 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 3 word pairs for topic='colors', count=3
+2025-07-18 08:24:29 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 3 word pairs for topic: colors
+2025-07-18 08:24:29 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 3 queries
+2025-07-18 08:24:30 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='red'
+2025-07-18 08:24:30 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='green'
+2025-07-18 08:24:30 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='blue'
+2025-07-18 08:24:30 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\red_e31b0bc4.jpg
+2025-07-18 08:24:30 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'red' using unsplash
+2025-07-18 08:24:30 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\blue_cd8e812a.jpg
+2025-07-18 08:24:30 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'blue' using unsplash
+2025-07-18 08:24:30 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\green_e068c987.jpg
+2025-07-18 08:24:30 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'green' using unsplash
+2025-07-18 08:24:30 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 3/3 successful in 1.52s
+2025-07-18 08:24:30 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=3, words_generated=3, images_downloaded=3, flashcards_created=3, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-18 08:24:27.040171, end_time=2025-07-18 08:24:30.960854
+2025-07-18 08:24:30 - flashcard_generator - [32mINFO[0m - generate_flashcards:269 - Successfully created 3 flashcards for topic: colors
+2025-07-18 08:24:30 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:111 - CSV data validation passed for 3 rows
+2025-07-18 08:24:30 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:82 - Successfully exported 3 flashcards to flashcards\flashcards_20250718_082430.csv
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:25:25 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 2 cache entries from disk
+2025-07-18 08:25:25 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards\cache, max_age=24h
+2025-07-18 08:25:25 - flashcard_generator.cache - [32mINFO[0m - _load_cache:289 - Loaded 3 image cache entries
+2025-07-18 08:25:25 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:25:25 - flashcard_generator.cache - [32mINFO[0m - _load_cache:289 - Loaded 3 image cache entries
+2025-07-18 08:25:25 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:25:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:25:25 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'common verb', count: 3
+2025-07-18 08:25:26 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 08:25:26 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 08:25:26 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='common verb', count=3
+2025-07-18 08:25:27 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:103 - Successfully generated 3 word pairs for topic: common verb
+2025-07-18 08:25:27 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 3 cache entries to disk
+2025-07-18 08:25:27 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 3 word pairs for topic='common verb', count=3
+2025-07-18 08:25:27 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 3 word pairs for topic: common verb
+2025-07-18 08:25:27 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 3 queries
+2025-07-18 08:25:28 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='go'
+2025-07-18 08:25:28 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='say'
+2025-07-18 08:25:28 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='do'
+2025-07-18 08:25:28 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\go_25bd4708.jpg
+2025-07-18 08:25:28 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'go' using unsplash
+2025-07-18 08:25:28 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\do_419aaad2.jpg
+2025-07-18 08:25:28 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'do' using unsplash
+2025-07-18 08:25:28 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\say_64968c3b.jpg
+2025-07-18 08:25:28 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'say' using unsplash
+2025-07-18 08:25:28 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 3/3 successful in 1.01s
+2025-07-18 08:25:28 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=3, words_generated=3, images_downloaded=3, flashcards_created=3, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-18 08:25:25.786475, end_time=2025-07-18 08:25:28.995326
+2025-07-18 08:25:29 - flashcard_generator - [32mINFO[0m - generate_flashcards:269 - Successfully created 3 flashcards for topic: common verb
+2025-07-18 08:25:29 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:111 - CSV data validation passed for 3 rows
+2025-07-18 08:25:29 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:82 - Successfully exported 3 flashcards to flashcards\flashcards_20250718_082529.csv
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:26:31 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 3 cache entries from disk
+2025-07-18 08:26:31 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards\cache, max_age=24h
+2025-07-18 08:26:31 - flashcard_generator.cache - [32mINFO[0m - _load_cache:289 - Loaded 6 image cache entries
+2025-07-18 08:26:31 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:26:31 - flashcard_generator.cache - [32mINFO[0m - _load_cache:289 - Loaded 6 image cache entries
+2025-07-18 08:26:31 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=flashcards\cache, max_age=168h
+2025-07-18 08:26:31 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:26:31 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'sentence with verb', count: 3
+2025-07-18 08:26:34 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-18 08:26:34 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-18 08:26:34 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='sentence with verb', count=3
+2025-07-18 08:26:35 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:103 - Successfully generated 3 word pairs for topic: sentence with verb
+2025-07-18 08:26:35 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 4 cache entries to disk
+2025-07-18 08:26:35 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 3 word pairs for topic='sentence with verb', count=3
+2025-07-18 08:26:35 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 3 word pairs for topic: sentence with verb
+2025-07-18 08:26:35 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 3 queries
+2025-07-18 08:26:36 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='predicate'
+2025-07-18 08:26:36 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='sentence'
+2025-07-18 08:26:36 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='verb'
+2025-07-18 08:26:36 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\sentence_8ff3b838.jpg
+2025-07-18 08:26:36 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'sentence' using unsplash
+2025-07-18 08:26:36 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\predicate_8e5ea7ab.jpg
+2025-07-18 08:26:36 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'predicate' using unsplash
+2025-07-18 08:26:36 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards\images\verb_7431bb99.jpg
+2025-07-18 08:26:36 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'verb' using unsplash
+2025-07-18 08:26:36 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 3/3 successful in 1.21s
+2025-07-18 08:26:36 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=3, words_generated=3, images_downloaded=3, flashcards_created=3, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-18 08:26:31.250258, end_time=2025-07-18 08:26:36.691895
+2025-07-18 08:26:36 - flashcard_generator - [32mINFO[0m - generate_flashcards:269 - Successfully created 3 flashcards for topic: sentence with verb
+2025-07-18 08:26:36 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:111 - CSV data validation passed for 3 rows
+2025-07-18 08:26:36 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:82 - Successfully exported 3 flashcards to flashcards\flashcards_20250718_082636.csv

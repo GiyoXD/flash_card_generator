@@ -1,0 +1,110 @@
+{
+  "version": "1.0",
+  "created_at": "2025-07-18T08:26:35.462203",
+  "entries": [
+    {
+      "topic": "animals",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "dog",
+          "chinese": "狗",
+          "pinyin": "gǒu",
+          "context": null
+        },
+        {
+          "english": "cat",
+          "chinese": "猫",
+          "pinyin": "māo",
+          "context": null
+        },
+        {
+          "english": "elephant",
+          "chinese": "大象",
+          "pinyin": "dà xiàng",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-18T08:19:55.285792",
+      "cache_key": "de94a92c6932c5db98a7dc2e19e9e4b5"
+    },
+    {
+      "topic": "colors",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "red",
+          "chinese": "红色",
+          "pinyin": "hóngsè",
+          "context": null
+        },
+        {
+          "english": "blue",
+          "chinese": "蓝色",
+          "pinyin": "lánsè",
+          "context": null
+        },
+        {
+          "english": "green",
+          "chinese": "绿色",
+          "pinyin": "lǜsè",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-18T08:24:29.402109",
+      "cache_key": "05f175d586e42f67b2a30f42ad087408"
+    },
+    {
+      "topic": "common verb",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "go",
+          "chinese": "去",
+          "pinyin": "qù",
+          "context": null
+        },
+        {
+          "english": "say",
+          "chinese": "说",
+          "pinyin": "shuō",
+          "context": null
+        },
+        {
+          "english": "do",
+          "chinese": "做",
+          "pinyin": "zuò",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-18T08:25:27.957469",
+      "cache_key": "66e480a8688ae18463265aed7acc354e"
+    },
+    {
+      "topic": "sentence with verb",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "verb",
+          "chinese": "动词",
+          "pinyin": "dòngcí",
+          "context": null
+        },
+        {
+          "english": "predicate",
+          "chinese": "谓语",
+          "pinyin": "wèiyǔ",
+          "context": null
+        },
+        {
+          "english": "sentence",
+          "chinese": "句子",
+          "pinyin": "jùzi",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-18T08:26:35.462203",
+      "cache_key": "a79d2f86318eb55281d93b2589eb97c5"
+    }
+  ]
+}

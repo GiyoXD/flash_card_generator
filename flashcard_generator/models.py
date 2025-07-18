@@ -40,8 +40,9 @@ class WordPair:
         if not re.search(r'[\u4e00-\u9fff]', self.chinese):
             raise ValueError("Chinese translation must contain Chinese characters")
         
-        # Check if pinyin contains only valid characters (letters, spaces, numbers for tones)
-        if not re.match(r'^[a-zA-Z\s\d]+$', self.pinyin.strip()):
+        # Check if pinyin contains valid characters (letters, spaces, numbers, tone marks, common punctuation)
+        # Allow: letters, spaces, numbers, tone marks (ā, á, ǎ, à, etc.), and common punctuation
+        if not re.match(r'^[a-zA-ZāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜĀÁǍÀĒÉĚÈĪÍǏÌŌÓǑÒŪÚǓÙǕǗǙǛ\s\d\'\-\.]+$', self.pinyin.strip()):
             raise ValueError("Pinyin contains invalid characters")
         
         return True

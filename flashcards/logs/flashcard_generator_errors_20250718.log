@@ -38,3 +38,61 @@ RuntimeError: Failed to generate word pairs after 3 attempts
 2025-07-18 07:54:45 - flashcard_generator.flashcard_generator - [31mERROR[0m - run:302 - Flashcard generation process failed: Failed to generate word pairs after 3 attempts
 Exception: None
 --------------------------------------------------------------------------------
+2025-07-18 08:16:21 - flashcard_generator.gemini_client - [31mERROR[0m - generate_word_pairs:117 - All 3 attempts failed for topic: nature
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 08:16:21 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: step=word_generation, topic=nature, count=10
+Exception: (<class 'RuntimeError'>, RuntimeError('Failed to generate word pairs after 3 attempts'), <traceback object at 0x0000028D3B144640>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: nature
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 08:16:21 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - RuntimeError: Failed to generate word pairs after 3 attempts | Context: topic=nature, count=10, stats={'total_requested': 10, 'words_generated': 0, 'images_downloaded': 0, 'flashcards_created': 0, 'errors': 0, 'api_errors': 1, 'image_errors': 0, 'validation_errors': 0, 'start_time': datetime.datetime(2025, 7, 18, 8, 16, 12, 688362), 'end_time': datetime.datetime(2025, 7, 18, 8, 16, 21, 308113)}
+Exception: (<class 'RuntimeError'>, RuntimeError('Failed to generate word pairs after 3 attempts'), <traceback object at 0x0000028D3B144640>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 108, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate valid word pairs for topic: {topic}")
+RuntimeError: Failed to generate valid word pairs for topic: nature
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 152, in generate_flashcards
+    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 118, in generate_word_pairs
+    raise RuntimeError(f"Failed to generate word pairs after {self.max_retries} attempts")
+RuntimeError: Failed to generate word pairs after 3 attempts
+2025-07-18 08:16:21 - flashcard_generator.flashcard_generator - [31mERROR[0m - run:302 - Flashcard generation process failed: Failed to generate word pairs after 3 attempts
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=dog&image_type=photo&per_page=3&safesearch=true'
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 08:19:55 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=elephant&image_type=photo&per_page=3&safesearch=true'
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 08:19:56 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=cat&image_type=photo&per_page=3&safesearch=true'
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=dog&image_type=photo&per_page=3&safesearch=true'
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 08:21:33 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=elephant&image_type=photo&per_page=3&safesearch=true'
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-18 08:21:34 - flashcard_generator.async_image_fetcher - [31mERROR[0m - _search_with_api:188 - API request failed for pixabay: 400, message='Bad Request', url='https://pixabay.com/api/?key=&q=cat&image_type=photo&per_page=3&safesearch=true'
+Exception: None
+--------------------------------------------------------------------------------
