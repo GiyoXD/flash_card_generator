@@ -183,3 +183,194 @@ metadata {
 , locale: "en-US"
 message: "API key not valid. Please pass a valid API key."
 ]
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=organization_test\cache, max_age=24h
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=organization_test\cache, max_age=168h
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=organization_test\cache, max_age=168h
+2025-07-18 08:03:32 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:03:32 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:111 - CSV data validation passed for 1 rows
+2025-07-18 08:03:32 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:82 - Successfully exported 1 flashcards to csv_test\test_format.csv
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=./cache_test, max_age=1h
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='test_topic', count=3
+2025-07-18 08:03:32 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 1 cache entries to disk
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 1 word pairs for topic='test_topic', count=3
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:55 - Cache hit for topic='test_topic', count=3
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=error_test\cache, max_age=24h
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=error_test\cache, max_age=168h
+2025-07-18 08:03:32 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=error_test\cache, max_age=168h
+2025-07-18 08:03:32 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-18 08:03:32 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'test', count: 1
+2025-07-18 08:03:33 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - AuthenticationError: [AUTH_ERROR] Invalid API key or authentication failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+] | Context: step=authentication, api=gemini
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 47, in authenticate
+    test_response = self._model.generate_content("Hello")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 129, in generate_flashcards
+    if not self.gemini_client.authenticate():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 64, in authenticate
+    raise AuthenticationError(
+flashcard_generator.exceptions.AuthenticationError: [AUTH_ERROR] Invalid API key or authentication failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-18 08:03:33 - flashcard_generator - [31mERROR[0m - log_error_with_context:113 - ConfigurationError: [CONFIG_ERROR] Authentication failed: [AUTH_ERROR] Invalid API key or authentication failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+] | Context: topic=test, count=1, stats={'total_requested': 1, 'words_generated': 0, 'images_downloaded': 0, 'flashcards_created': 0, 'errors': 0, 'api_errors': 1, 'image_errors': 0, 'validation_errors': 0, 'start_time': datetime.datetime(2025, 7, 18, 8, 3, 32, 615660), 'end_time': datetime.datetime(2025, 7, 18, 8, 3, 33, 182531)}
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 47, in authenticate
+    test_response = self._model.generate_content("Hello")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 129, in generate_flashcards
+    if not self.gemini_client.authenticate():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\gemini_client.py", line 64, in authenticate
+    raise AuthenticationError(
+flashcard_generator.exceptions.AuthenticationError: [AUTH_ERROR] Invalid API key or authentication failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JPZ031127\Desktop\Flash Card Deck Gen\flashcard_generator\flashcard_generator.py", line 136, in generate_flashcards
+    raise ConfigurationError(f"Authentication failed: {e}")
+flashcard_generator.exceptions.ConfigurationError: [CONFIG_ERROR] Authentication failed: [AUTH_ERROR] Invalid API key or authentication failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-07-18 08:03:33 - flashcard_generator.flashcard_generator - [31mERROR[0m - run:302 - Flashcard generation process failed: [CONFIG_ERROR] Authentication failed: [AUTH_ERROR] Invalid API key or authentication failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
