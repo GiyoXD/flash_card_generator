@@ -1,0 +1,43 @@
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Windows-10-10.0.19045-SP0
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'WindowsPE')
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-21 08:26:22 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-21 08:26:22 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=t1\cache, max_age=24h
+2025-07-21 08:26:22 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=t1\cache, max_age=168h
+2025-07-21 08:26:22 - flashcard_generator.cache - [32mINFO[0m - __init__:238 - ImageCache initialized with cache_dir=t1\cache, max_age=168h
+2025-07-21 08:26:22 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-21 08:26:22 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animal', count: 5
+2025-07-21 08:26:23 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:49 - Successfully authenticated with Gemini API
+2025-07-21 08:26:23 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-21 08:26:23 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='animal', count=5
+2025-07-21 08:26:25 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:103 - Successfully generated 5 word pairs for topic: animal
+2025-07-21 08:26:25 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 1 cache entries to disk
+2025-07-21 08:26:25 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 5 word pairs for topic='animal', count=5
+2025-07-21 08:26:25 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 5 word pairs for topic: animal
+2025-07-21 08:26:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 5 queries
+2025-07-21 08:26:25 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='cat'
+2025-07-21 08:26:26 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='tiger'
+2025-07-21 08:26:26 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='dog'
+2025-07-21 08:26:26 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='animal'
+2025-07-21 08:26:26 - flashcard_generator.cache - [32mINFO[0m - store_image_url:273 - Cached image URL for query='elephant'
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: t1\images\cat_45501904.jpg
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'cat' using unsplash
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: t1\images\tiger_782cfcca.jpg
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'tiger' using unsplash
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: t1\images\animal_84ab790c.jpg
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'animal' using unsplash
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: t1\images\dog_60a37ffa.jpg
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'dog' using unsplash
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: t1\images\elephant_58087319.jpg
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'elephant' using unsplash
+2025-07-21 08:26:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 5/5 successful in 1.13s
+2025-07-21 08:26:26 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=5, words_generated=5, images_downloaded=5, flashcards_created=5, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-21 08:26:22.661841, end_time=2025-07-21 08:26:26.530569
+2025-07-21 08:26:26 - flashcard_generator - [32mINFO[0m - generate_flashcards:269 - Successfully created 5 flashcards for topic: animal
+2025-07-21 08:26:26 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:111 - CSV data validation passed for 5 rows
+2025-07-21 08:26:26 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:82 - Successfully exported 5 flashcards to t1\flashcards_20250721_082626.csv

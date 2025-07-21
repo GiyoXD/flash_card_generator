@@ -119,12 +119,21 @@ class CSVExporter:
             try:
                 # Validate flashcard
                 flashcard.validate()
+
+                # Handle image path formatting for Anki
+                image_tag = ''
+                local_path = flashcard.image_local_path
+                if local_path:
+                    # Extract only the filename from the full path
+                    filename = Path(local_path).name
+                    # Create the HTML img tag
+                    image_tag = f'<img src="{filename}">'
                 
                 row = {
                     'English': self._escape_csv_value(flashcard.english_word),
                     'Chinese': self._escape_csv_value(flashcard.chinese_translation),
                     'Pinyin': self._escape_csv_value(flashcard.pinyin),
-                    'Image_Path': self._escape_csv_value(flashcard.image_local_path or flashcard.image_url or ''),
+                    'Image_Path': image_tag,  # Use the formatted HTML tag
                     'Topic': self._escape_csv_value(flashcard.topic or ''),
                     'Created_Date': flashcard.created_at.strftime('%Y-%m-%d %H:%M:%S')
                 }

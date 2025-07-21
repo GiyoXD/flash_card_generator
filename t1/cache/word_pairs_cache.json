@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "created_at": "2025-07-21T08:26:25.369986",
+  "entries": [
+    {
+      "topic": "animal",
+      "count": 5,
+      "word_pairs": [
+        {
+          "english": "animal",
+          "chinese": "动物",
+          "pinyin": "dòngwù",
+          "context": null
+        },
+        {
+          "english": "dog",
+          "chinese": "狗",
+          "pinyin": "gǒu",
+          "context": null
+        },
+        {
+          "english": "cat",
+          "chinese": "猫",
+          "pinyin": "māo",
+          "context": null
+        },
+        {
+          "english": "elephant",
+          "chinese": "大象",
+          "pinyin": "dàxiàng",
+          "context": null
+        },
+        {
+          "english": "tiger",
+          "chinese": "老虎",
+          "pinyin": "lǎohǔ",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-21T08:26:25.369986",
+      "cache_key": "84a2f6e9fd591afb8be1f8b4711cded6"
+    }
+  ]
+}
