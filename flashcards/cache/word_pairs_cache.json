@@ -1,59 +1,7 @@
 {
   "version": "1.0",
-  "created_at": "2025-07-18T08:26:35.462203",
+  "created_at": "2025-07-22T08:20:37.370039",
   "entries": [
-    {
-      "topic": "animals",
-      "count": 3,
-      "word_pairs": [
-        {
-          "english": "dog",
-          "chinese": "狗",
-          "pinyin": "gǒu",
-          "context": null
-        },
-        {
-          "english": "cat",
-          "chinese": "猫",
-          "pinyin": "māo",
-          "context": null
-        },
-        {
-          "english": "elephant",
-          "chinese": "大象",
-          "pinyin": "dà xiàng",
-          "context": null
-        }
-      ],
-      "timestamp": "2025-07-18T08:19:55.285792",
-      "cache_key": "de94a92c6932c5db98a7dc2e19e9e4b5"
-    },
-    {
-      "topic": "colors",
-      "count": 3,
-      "word_pairs": [
-        {
-          "english": "red",
-          "chinese": "红色",
-          "pinyin": "hóngsè",
-          "context": null
-        },
-        {
-          "english": "blue",
-          "chinese": "蓝色",
-          "pinyin": "lánsè",
-          "context": null
-        },
-        {
-          "english": "green",
-          "chinese": "绿色",
-          "pinyin": "lǜsè",
-          "context": null
-        }
-      ],
-      "timestamp": "2025-07-18T08:24:29.402109",
-      "cache_key": "05f175d586e42f67b2a30f42ad087408"
-    },
     {
       "topic": "common verb",
       "count": 3,
@@ -105,6 +53,253 @@
       ],
       "timestamp": "2025-07-18T08:26:35.462203",
       "cache_key": "a79d2f86318eb55281d93b2589eb97c5"
+    },
+    {
+      "topic": "animals",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "cat",
+          "chinese": "猫",
+          "pinyin": "māo1",
+          "sentence": "My cat is very cute.",
+          "context": null
+        },
+        {
+          "english": "dog",
+          "chinese": "狗",
+          "pinyin": "gǒu3",
+          "sentence": "The dog likes to play fetch.",
+          "context": null
+        },
+        {
+          "english": "fish",
+          "chinese": "鱼",
+          "pinyin": "yú2",
+          "sentence": "I have a goldfish in my tank.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-21T16:27:38.154480",
+      "cache_key": "de94a92c6932c5db98a7dc2e19e9e4b5"
+    },
+    {
+      "topic": "food",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "apple",
+          "chinese": "苹果",
+          "pinyin": "píng2 guǒ",
+          "sentence": "I like to eat an apple every day.",
+          "context": null
+        },
+        {
+          "english": "rice",
+          "chinese": "米饭",
+          "pinyin": "mǐ fàn",
+          "sentence": "Rice is a staple food in many countries.",
+          "context": null
+        },
+        {
+          "english": "water",
+          "chinese": "水",
+          "pinyin": "shuǐ",
+          "sentence": "I need to drink some water.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-21T16:29:22.013219",
+      "cache_key": "10a2ed17dad80e7751dfdc7f39bd841d"
+    },
+    {
+      "topic": "colors",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "red",
+          "chinese": "红色",
+          "pinyin": "hóngsè",
+          "sentence": "苹果是红色的。",
+          "context": null
+        },
+        {
+          "english": "blue",
+          "chinese": "蓝色",
+          "pinyin": "lánse",
+          "sentence": "天空是蓝色的。",
+          "context": null
+        },
+        {
+          "english": "yellow",
+          "chinese": "黄色",
+          "pinyin": "huángsè",
+          "sentence": "太阳是黄色的。",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-22T07:52:10.000325",
+      "cache_key": "05f175d586e42f67b2a30f42ad087408"
+    },
+    {
+      "topic": "fruits",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "apple",
+          "chinese": "苹果",
+          "pinyin": "píng2 guǒ3",
+          "sentence": "我喜欢吃苹果。 (Wǒ xǐhuan chī píng2guǒ3.)  I like to eat apples.",
+          "context": null
+        },
+        {
+          "english": "banana",
+          "chinese": "香蕉",
+          "pinyin": "xiāng1 jiāo1",
+          "sentence": "香蕉很甜。 (Xiāng1jiāo1 hěn tián.) Bananas are sweet.",
+          "context": null
+        },
+        {
+          "english": "orange",
+          "chinese": "橙子",
+          "pinyin": "chéng2 zi",
+          "sentence": "我今天买了橙子。 (Wǒ jīn1tiān mǎi le chéng2 zi.) I bought an orange today.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-22T07:53:29.331623",
+      "cache_key": "cedc761f8c6d75c2715a7f13e5b67f92"
+    },
+    {
+      "topic": "weather",
+      "count": 2,
+      "word_pairs": [
+        {
+          "english": "sun",
+          "chinese": "太阳",
+          "pinyin": "tàiyáng",
+          "sentence": "English: The sun is shining today.<br>中文: 今天阳光灿烂。<br>拼音: Jīntiān yángguāng cànlàn.",
+          "context": null
+        },
+        {
+          "english": "rain",
+          "chinese": "雨",
+          "pinyin": "yǔ",
+          "sentence": "English: It's raining outside.<br>中文: 外面在下雨。<br>拼音: Wàimiàn zài xiàyǔ.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-22T07:57:29.759669",
+      "cache_key": "da55b1cb0b58990318be59eb8dab624c"
+    },
+    {
+      "topic": "emotions",
+      "count": 2,
+      "word_pairs": [
+        {
+          "english": "happy",
+          "chinese": "快乐",
+          "pinyin": "kuài lè",
+          "sentence": "I am happy today.<br>我今天很快乐。<br>Wǒ jīntiān hěn kuài lè.<br>Fill-in-the-blank: 我今天很____。(I am very ____ today.)",
+          "context": null
+        },
+        {
+          "english": "sad",
+          "chinese": "伤心",
+          "pinyin": "shāng xīn",
+          "sentence": "He is sad because he lost his toy.<br>他因为丢了玩具而伤心。<br>Tā yīn wèi diū le wánjù ér shāng xīn.<br>Fill-in-the-blank: 他因为考试不及格而____。(He is ____ because he failed the exam.)",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-22T08:00:37.364636",
+      "cache_key": "0fad393a8273add9f1b19f49afea1797"
+    },
+    {
+      "topic": "sports",
+      "count": 2,
+      "word_pairs": [
+        {
+          "english": "Sport",
+          "chinese": "运动",
+          "pinyin": "yùn4dòng4",
+          "sentence": "Sport is good for health.<br>运动对健康有益。<br>Yùn4dòng4 duì jiàn4kāng1 yǒu3yì4.<br>____ 对健康有益。<br>____ duì jiàn4kāng1 yǒu3yì4.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-22T08:06:50.307002",
+      "cache_key": "e3c3d08882cfb178bfedf6676244f17e"
+    },
+    {
+      "topic": "expression",
+      "count": 5,
+      "word_pairs": [
+        {
+          "english": "Smile",
+          "chinese": "笑",
+          "pinyin": "xiào4",
+          "sentence": "He likes to smile.<br>他喜欢笑。<br>Tā xǐhuan xiào.<br>My friend likes to ____.<br>我的朋友喜欢____。<br>Wǒ de péngyou xǐhuan ____.",
+          "context": null
+        },
+        {
+          "english": "Talk",
+          "chinese": "说话",
+          "pinyin": "shuō1 huà4",
+          "sentence": "We like to talk.<br>我们喜欢说话。<br>Wǒmen xǐhuan shuōhuà.<br>Let's ____ together.<br>我们一起____吧。<br>Wǒmen yìqǐ ____ ba.",
+          "context": null
+        },
+        {
+          "english": "Face",
+          "chinese": "脸",
+          "pinyin": "liǎn3",
+          "sentence": "Wash your face.<br>洗你的脸。<br>Xǐ nǐ de liǎn.<br>My ____ is clean.<br>我的____很干净。<br>Wǒ de ____ hěn gānjìng.",
+          "context": null
+        },
+        {
+          "english": "Feel",
+          "chinese": "感觉",
+          "pinyin": "gǎn3 jué2",
+          "sentence": "I feel happy.<br>我感觉很高兴。<br>Wǒ gǎnjué hěn gāoxìng.<br>How do you ____?<br>你____怎么样？<br>Nǐ ____ zěnmeyàng?",
+          "context": null
+        },
+        {
+          "english": "Expression",
+          "chinese": "表情",
+          "pinyin": "biǎo3 qíng2",
+          "sentence": "Her expression is happy.<br>她的表情很高兴。<br>Tā de biǎoqíng hěn gāoxìng.<br>His ____ is serious.<br>他的____很严肃。<br>Tā de ____ hěn yánsù.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-22T08:10:31.295576",
+      "cache_key": "4e8c605f9ba5c88ea388f36dfcfb5f06"
+    },
+    {
+      "topic": "family",
+      "count": 3,
+      "word_pairs": [
+        {
+          "english": "family",
+          "chinese": "家庭",
+          "pinyin": "jiā tíng",
+          "sentence": "My family is big.<br>我的家庭很大。<br>Wǒ de jiātíng hěn dà.<br>我的____很大。<br>Wǒ de ____ hěn dà.",
+          "context": null
+        },
+        {
+          "english": "mother",
+          "chinese": "妈妈",
+          "pinyin": "mā ma5",
+          "sentence": "My mother loves me.<br>我的妈妈爱我。<br>Wǒ de māma ài wǒ.<br>我的____爱我。<br>Wǒ de ____ ài wǒ.",
+          "context": null
+        },
+        {
+          "english": "father",
+          "chinese": "爸爸",
+          "pinyin": "bà ba5",
+          "sentence": "My father works.<br>我的爸爸工作。<br>Wǒ de bàba gōngzuò.<br>我的____工作。<br>Wǒ de ____ gōngzuò.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-22T08:20:37.370039",
+      "cache_key": "4cf510e66375f5510b65ad4bb232e462"
     }
   ]
 }

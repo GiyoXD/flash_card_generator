@@ -30,11 +30,9 @@ class GeminiClient:
         try:
             genai.configure(api_key=self.api_key)
             
-            # Initialize the model with safety settings
-            # Note: Using gemini-1.5-flash as gemini-2.5 may not be available yet
-            # This can be updated when Gemini 2.5 becomes available
+
             self._model = genai.GenerativeModel(
-                model_name="gemini-1.5-flash",
+                model_name="gemini-2.5-flash",
                 safety_settings={
                     HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
                     HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
@@ -78,7 +76,7 @@ class GeminiClient:
                     details={"original_error": str(e)}
                 )
     
-    def generate_word_pairs(self, topic: str, count: int) -> List[WordPair]:
+    def generate_word_pairs(self, topic: str, count: int, context: Optional[str] = None) -> List[WordPair]:
         """Generate English-Chinese word pairs for a given topic."""
         # Input validation
         if not topic or not topic.strip():
@@ -92,7 +90,7 @@ class GeminiClient:
             if not self.authenticate():
                 raise RuntimeError("Failed to authenticate with Gemini API")
         
-        prompt = self._create_word_generation_prompt(topic.strip(), count)
+        prompt = self._create_word_generation_prompt(topic.strip(), count, context)
         
         for attempt in range(self.max_retries):
             try:
@@ -161,10 +159,14 @@ class GeminiClient:
         
         raise RuntimeError(f"Failed to translate '{english_word}'")
     
-    def _create_word_generation_prompt(self, topic: str, count: int) -> str:
+    def _create_word_generation_prompt(self, topic: str, count: int, context: Optional[str] = None) -> str:
         """Create a structured prompt for word generation."""
+        context_instruction = ""
+        if context:
+            context_instruction = f"\n        Additional Context: {context}\n        Please consider this context when selecting words and creating sentences."
+        
         return f"""
-        Generate {count} English words related to the topic "{topic}" along with their Chinese (Simplified) translations and pinyin pronunciation.
+        Generate {count} English words related to the topic "{topic}" along with their Chinese (Simplified) translations, pinyin pronunciation, and example sentences.{context_instruction}
         
         Requirements:
         1. Words should be commonly used and appropriate for language learning
@@ -172,12 +174,13 @@ class GeminiClient:
         3. Chinese translations should use Simplified Chinese characters
         4. Provide accurate pinyin pronunciation with tone numbers (e.g., "mao1" for 猫)
         5. Provide the most common and accurate translation for each word
-        6. Words should be suitable for flashcard learning
+        6. Include example sentences in four formats: English, Chinese, Pinyin, and a fill-in-the-blank test
+        7. Words should be suitable for flashcard learning
         
         Format your response as a JSON array with this exact structure:
         [
-            {{"english": "word1", "chinese": "中文1", "pinyin": "pinyin1"}},
-            {{"english": "word2", "chinese": "中文2", "pinyin": "pinyin2"}},
+            {{"english": "word1", "chinese": "中文1", "pinyin": "pinyin1", "sentence": "Example sentence using word1.<br>使用中文1的简单中文句子。<br>Pinyin version of the Chinese sentence.<br>我喜欢吃____。<br>Wǒ xǐhuan chī ____.""}},
+            {{"english": "word2", "chinese": "中文2", "pinyin": "pinyin2", "sentence": "Example sentence using word2.<br>使用中文2的简单中文句子。<br>Pinyin version of the Chinese sentence.<br>今天天气很____。<br>Jīntiān tiānqì hěn ____.""}},
             ...
         ]
         
@@ -226,9 +229,15 @@ class GeminiClient:
                         english = item['english'].strip()
                         chinese = item['chinese'].strip()
                         pinyin = item['pinyin'].strip()
+                        sentence = item.get('sentence', '').strip()  # Optional sentence field
                         
                         if english and chinese and pinyin:
-                            word_pair = WordPair(english=english, chinese=chinese, pinyin=pinyin)
+                            word_pair = WordPair(
+                                english=english, 
+                                chinese=chinese, 
+                                pinyin=pinyin,
+                                sentence=sentence if sentence else None
+                            )
                             word_pairs.append(word_pair)
                         else:
                             logger.warning(f"Skipping empty word pair: {item}")

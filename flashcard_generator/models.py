@@ -15,6 +15,7 @@ class WordPair:
     english: str
     chinese: str
     pinyin: str
+    sentence: Optional[str] = None
     context: Optional[str] = None
     
     def __post_init__(self):
@@ -53,6 +54,7 @@ class WordPair:
             'english': self.english,
             'chinese': self.chinese,
             'pinyin': self.pinyin,
+            'sentence': self.sentence,
             'context': self.context
         }
 
@@ -66,6 +68,7 @@ class Flashcard:
     image_url: Optional[str] = None
     image_local_path: Optional[str] = None
     topic: Optional[str] = None
+    sentence: Optional[str] = None
     created_at: datetime = field(default_factory=datetime.now)
     
     def __post_init__(self):

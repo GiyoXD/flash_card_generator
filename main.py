@@ -55,6 +55,11 @@ def main():
         action="store_true",
         help="Skip image downloading"
     )
+    parser.add_argument(
+        "-c", "--context",
+        type=str,
+        help="Additional context for AI generation (e.g., 'beginner level', 'business terms', 'daily conversation')"
+    )
     
     args = parser.parse_args()
     
@@ -114,7 +119,8 @@ def main():
         csv_file_path = generator.run(
             topic=args.topic,
             count=args.count,
-            output_filename=args.filename
+            output_filename=args.filename,
+            context=args.context
         )
         
         print(f"\n🎉 Success! Flashcards generated and saved to:")

@@ -194,6 +194,7 @@ class WordPairCache:
                 'english': wp.english,
                 'chinese': wp.chinese,
                 'pinyin': wp.pinyin,
+                'sentence': wp.sentence,
                 'context': wp.context
             }
             for wp in word_pairs
@@ -209,6 +210,7 @@ class WordPairCache:
                     english=pair_data['english'],
                     chinese=pair_data['chinese'],
                     pinyin=pair_data['pinyin'],
+                    sentence=pair_data.get('sentence'),
                     context=pair_data.get('context')
                 )
                 word_pairs.append(word_pair)

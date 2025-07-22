@@ -34,7 +34,8 @@ class CSVExporter:
             'Pinyin',
             'Image_Path',
             'Topic',
-            'Created_Date'
+            'Created_Date',
+            'Chinese_Sentence'  # Chinese example sentence for better learning
         ]
     
     def export_flashcards(self, flashcards: List[Flashcard], filename: Optional[str] = None) -> str:
@@ -135,7 +136,8 @@ class CSVExporter:
                     'Pinyin': self._escape_csv_value(flashcard.pinyin),
                     'Image_Path': image_tag,  # Use the formatted HTML tag
                     'Topic': self._escape_csv_value(flashcard.topic or ''),
-                    'Created_Date': flashcard.created_at.strftime('%Y-%m-%d %H:%M:%S')
+                    'Created_Date': flashcard.created_at.strftime('%Y-%m-%d %H:%M:%S'),
+                    'Chinese_Sentence': self._escape_csv_value(flashcard.sentence or '')  # Chinese example sentence
                 }
                 
                 csv_data.append(row)

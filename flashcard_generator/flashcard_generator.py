@@ -101,7 +101,7 @@ class FlashcardGenerator:
         # Partial results storage
         self._partial_flashcards = []
     
-    def generate_flashcards(self, topic: str, count: int) -> List[Flashcard]:
+    def generate_flashcards(self, topic: str, count: int, context: Optional[str] = None) -> List[Flashcard]:
         """Generate flashcards for a given topic and count with comprehensive error handling."""
         # Input validation with detailed error messages
         if not topic or not topic.strip():
@@ -149,7 +149,7 @@ class FlashcardGenerator:
                 
                 # Generate new word pairs if not cached
                 if not word_pairs:
-                    word_pairs = self.gemini_client.generate_word_pairs(topic, count)
+                    word_pairs = self.gemini_client.generate_word_pairs(topic, count, context)
                     
                     # Store in cache if enabled
                     if self.word_cache and word_pairs:
@@ -181,6 +181,7 @@ class FlashcardGenerator:
                         english_word=word_pair.english,
                         chinese_translation=word_pair.chinese,
                         pinyin=word_pair.pinyin,
+                        sentence=word_pair.sentence,
                         topic=topic
                     )
                     basic_flashcards.append(flashcard)
@@ -282,11 +283,11 @@ class FlashcardGenerator:
             
             raise
     
-    def run(self, topic: str, count: int, output_filename: Optional[str] = None) -> str:
+    def run(self, topic: str, count: int, output_filename: Optional[str] = None, context: Optional[str] = None) -> str:
         """Run the complete flashcard generation process and return CSV file path."""
         try:
             # Generate flashcards
-            flashcards = self.generate_flashcards(topic, count)
+            flashcards = self.generate_flashcards(topic, count, context)
             
             # Export to CSV
             print("📄 Exporting flashcards to CSV...")

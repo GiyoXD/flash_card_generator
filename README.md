@@ -12,6 +12,8 @@ The AI Flashcard Generator is a Python application that uses Google Gemini AI to
 - 📄 **CSV Export**: Compatible with Anki, Quizlet, and other flashcard applications
 - 🎯 **Topic-Based Generation**: Generate flashcards for specific topics or themes
 - 🔤 **Pinyin Support**: Includes accurate pinyin pronunciation for Chinese characters
+- 📖 **Example Sentences**: Automatically generates example sentences for each word ✨ NEW!
+- 🎯 **Context-Aware Generation**: Customize vocabulary level and style with context parameter ✨ NEW!
 
 ### Advanced Features
 - ⚡ **Async Image Processing**: Concurrent image downloads for faster generation
@@ -99,6 +101,13 @@ python main.py --topic "travel" --count 20 \
   --filename "travel_cards.csv" \
   --cleanup
 
+# Use context to customize vocabulary level and style ✨ NEW!
+python main.py --topic "food" --count 10 \
+  --context "beginner level, common everyday foods"
+
+python main.py --topic "business" --count 15 \
+  --context "professional terms, office environment"
+
 # Skip image downloads for faster generation
 python main.py --topic "business" --count 10 --no-images
 ```
@@ -109,10 +118,48 @@ python main.py --topic "business" --count 10 --no-images
 |--------|-------------|---------|
 | `--topic` | Topic for flashcard generation (required) | - |
 | `--count` | Number of flashcards to generate | 10 |
+| `-c, --context` | Additional context for AI generation ✨ NEW! | - |
 | `--output` | Output directory for files | ./flashcards |
 | `--filename` | Custom CSV filename | auto-generated |
 | `--cleanup` | Clean up old files before generation | false |
 | `--no-images` | Skip image downloading | false |
+
+### ✨ Enhanced Learning Features
+
+#### Context-Aware Generation
+Use the `--context` parameter to customize vocabulary selection and difficulty:
+
+```bash
+# Beginner-friendly vocabulary
+python main.py --topic "animals" --count 10 \
+  --context "beginner level, suitable for children"
+
+# Professional business terms
+python main.py --topic "technology" --count 15 \
+  --context "business terms, professional vocabulary"
+
+# Academic vocabulary
+python main.py --topic "science" --count 12 \
+  --context "university level, academic terminology"
+```
+
+#### Multi-Language Learning Format
+Every flashcard now includes a comprehensive 5-line learning format:
+
+1. **English sentence**: Context and understanding
+2. **Chinese sentence**: Target language practice  
+3. **Pinyin sentence**: Pronunciation guide
+4. **Chinese fill-in-the-blank**: Writing practice
+5. **Pinyin fill-in-the-blank**: Speaking practice
+
+**CSV Output Format:**
+- `English`: The English word
+- `Chinese`: Chinese translation  
+- `Pinyin`: Pronunciation guide
+- `Image_Path`: Image reference for flashcard apps
+- `Topic`: Generation topic
+- `Created_Date`: Creation timestamp
+- `Chinese_Sentence`: Multi-line learning format with exercises ✨ NEW!
 
 ### Programmatic Usage
 
@@ -126,8 +173,12 @@ config = ConfigManager.load_config()
 # Initialize generator
 generator = FlashcardGenerator(config)
 
-# Generate flashcards
-csv_file = generator.run(topic="science", count=12)
+# Generate flashcards with context ✨ NEW!
+csv_file = generator.run(
+    topic="science", 
+    count=12,
+    context="high school level, basic concepts"
+)
 print(f"Flashcards saved to: {csv_file}")
 
 # Get statistics
