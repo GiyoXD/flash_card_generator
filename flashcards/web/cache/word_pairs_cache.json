@@ -1,0 +1,199 @@
+{
+  "version": "1.0",
+  "created_at": "2025-07-27T23:42:45.045746",
+  "entries": [
+    {
+      "topic": "dog",
+      "count": 10,
+      "word_pairs": [
+        {
+          "english": "dog",
+          "chinese": "狗",
+          "pinyin": "gǒu",
+          "sentence": "My dog loves to play fetch.<br>我的狗喜欢玩接球。<br>Wǒ de gǒu xǐhuan wán jiēqiú.<br>My ____ loves to play fetch.<br>我的____喜欢玩接球。<br>Wǒ de ____ xǐhuan wán jiēqiú.",
+          "context": null
+        },
+        {
+          "english": "puppy",
+          "chinese": "小狗",
+          "pinyin": "xiǎo gǒu",
+          "sentence": "The cute puppy wagged its tail.<br>那只可爱的小狗摇了摇尾巴。<br>Nà zhī kě'ài de xiǎo gǒu yáole yáo wěiba.<br>The cute ____ wagged its tail.<br>那只可爱的____摇了摇尾巴。<br>Nà zhī kě'ài de ____ yáole yáo wěiba.",
+          "context": null
+        },
+        {
+          "english": "bark",
+          "chinese": "叫",
+          "pinyin": "jiào",
+          "sentence": "My dog will bark at strangers.<br>我的狗会对着陌生人叫。<br>Wǒ de gǒu huì duìzhe mòshēngrén jiào.<br>My dog will ____ at strangers.<br>我的狗会对着陌生人____。<br>Wǒ de gǒu huì duìzhe mòshēngrén ____.",
+          "context": null
+        },
+        {
+          "english": "leash",
+          "chinese": "狗链",
+          "pinyin": "gǒu liàn",
+          "sentence": "Always put a leash on your dog when going for a walk.<br>遛狗时一定要给你的狗戴上狗链。<br>Liù gǒu shí yīdìng yào gěi nǐ de gǒu dài shàng gǒu liàn.<br>Always put a ____ on your dog when going for a walk.<br>遛狗时一定要给你的狗戴上____。<br>Liù gǒu shí yīdìng yào gěi nǐ de gǒu dài shàng ____.",
+          "context": null
+        },
+        {
+          "english": "tail",
+          "chinese": "尾巴",
+          "pinyin": "wěiba",
+          "sentence": "The dog wagged its tail happily.<br>狗高兴地摇着尾巴。<br>Gǒu gāoxìng de yáozhe wěiba.<br>The dog wagged its ____ happily.<br>狗高兴地摇着____。<br>Gǒu gāoxìng de yáozhe ____.",
+          "context": null
+        },
+        {
+          "english": "paw",
+          "chinese": "爪子",
+          "pinyin": "zhuǎzi",
+          "sentence": "My dog offered its paw for a handshake.<br>我的狗伸出爪子跟我握手。<br>Wǒ de gǒu shēnchū zhuǎzi gēn wǒ wòshǒu.<br>My dog offered its ____ for a handshake.<br>我的狗伸出____跟我握手。<br>Wǒ de gǒu shēnchū ____ gēn wǒ wòshǒu.",
+          "context": null
+        },
+        {
+          "english": "walk",
+          "chinese": "遛",
+          "pinyin": "liù",
+          "sentence": "I need to walk the dog every morning.<br>我每天早上都要遛狗。<br>Wǒ měitiān zǎoshang dōu yào liù gǒu.<br>I need to ____ the dog every morning.<br>我每天早上都要____狗。<br>Wǒ měitiān zǎoshang dōu yào ____ gǒu.",
+          "context": null
+        },
+        {
+          "english": "feed",
+          "chinese": "喂",
+          "pinyin": "wèi",
+          "sentence": "Don't forget to feed the dog.<br>别忘了喂狗。<br>Bié wàngle wèi gǒu.<br>Don't forget to ____ the dog.<br>别忘了____狗。<br>Bié wàngle ____ gǒu.",
+          "context": null
+        },
+        {
+          "english": "loyal",
+          "chinese": "忠诚",
+          "pinyin": "zhōngchéng",
+          "sentence": "Dogs are known for being loyal companions.<br>狗以忠诚的伴侣而闻名。<br>Gǒu yǐ zhōngchéng de bànlǚ ér wénmíng.<br>Dogs are known for being ____ companions.<br>狗以____的伴侣而闻名。<br>Gǒu yǐ ____ de bànlǚ ér wénmíng.",
+          "context": null
+        },
+        {
+          "english": "bone",
+          "chinese": "骨头",
+          "pinyin": "gǔtou",
+          "sentence": "The dog buried its bone in the yard.<br>狗把骨头埋在了院子里。<br>Gǒu bǎ gǔtou máizàile yuànzi lǐ.<br>The dog buried its ____ in the yard.<br>狗把____埋在了院子里。<br>Gǒu bǎ ____ máizàile yuànzi lǐ.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-27T23:31:23.614496",
+      "cache_key": "b5bb4c6d8c71b52284af7607a05037b9"
+    },
+    {
+      "topic": "dog",
+      "count": 2,
+      "word_pairs": [
+        {
+          "english": "dog",
+          "chinese": "狗",
+          "pinyin": "gǒu3",
+          "sentence": "My dog loves to play in the park.<br>我的狗喜欢在公园玩。<br>Wǒ de gǒu xǐhuan zài gōngyuán wán.<br>我有一只可爱的____。<br>Wǒ yǒu yī zhī kě'ài de ____.",
+          "context": null
+        },
+        {
+          "english": "puppy",
+          "chinese": "小狗",
+          "pinyin": "xiǎo3 gǒu3",
+          "sentence": "The puppy is very playful.<br>这只小狗非常活泼。<br>Zhè zhī xiǎo gǒu fēicháng huópō.<br>我家的____喜欢追球。<br>Wǒ jiā de ____ xǐhuan zhuī qiú.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-27T23:35:31.142369",
+      "cache_key": "524e4a79b79b85363da14b457136c46b"
+    },
+    {
+      "topic": "animal",
+      "count": 10,
+      "word_pairs": [
+        {
+          "english": "Cat",
+          "chinese": "猫",
+          "pinyin": "mao1",
+          "sentence": "My cat loves to sleep in the sun.<br>我的猫喜欢在阳光下睡觉。<br>Wo3 de mao1 xi3huan zai4 yang2guang1 xia4 shui4jiao4.<br>My ____ loves to sleep in the sun.<br>Wo3 de ____ xi3huan zai4 yang2guang1 xia4 shui4jiao4.",
+          "context": null
+        },
+        {
+          "english": "Dog",
+          "chinese": "狗",
+          "pinyin": "gou3",
+          "sentence": "The dog wagged its tail happily.<br>这只狗高兴地摇着尾巴。<br>Zhe4 zhi1 gou3 gao1xing4 de yao2zhe wei3ba.<br>The ____ wagged its tail happily.<br>Zhe4 zhi1 ____ gao1xing4 de yao2zhe wei3ba.",
+          "context": null
+        },
+        {
+          "english": "Bird",
+          "chinese": "鸟",
+          "pinyin": "niao3",
+          "sentence": "A small bird sang a sweet song.<br>一只小鸟唱着甜美的歌。<br>Yi4 zhi1 xiao3niao3 chang4zhe tian2mei3 de ge1.<br>A small ____ sang a sweet song.<br>Yi4 zhi1 xiao3____ chang4zhe tian2mei3 de ge1.",
+          "context": null
+        },
+        {
+          "english": "Fish",
+          "chinese": "鱼",
+          "pinyin": "yu2",
+          "sentence": "We fed the fish in the pond.<br>我们给池塘里的鱼喂食。<br>Wo3men gei3 chi2tang2 li3 de yu2 wei4shi2.<br>We fed the ____ in the pond.<br>Wo3men gei3 chi2tang2 li3 de ____ wei4shi2.",
+          "context": null
+        },
+        {
+          "english": "Elephant",
+          "chinese": "大象",
+          "pinyin": "da4xiang4",
+          "sentence": "An elephant is a very large animal.<br>大象是一种非常大的动物。<br>Da4xiang4 shi4 yi4 zhong3 fei1chang2 da4 de dong4wu4.<br>An ____ is a very large animal.<br>____ shi4 yi4 zhong3 fei1chang2 da4 de dong4wu4.",
+          "context": null
+        },
+        {
+          "english": "Lion",
+          "chinese": "狮子",
+          "pinyin": "shi1zi",
+          "sentence": "The lion roared loudly.<br>狮子大声地吼叫。<br>Shi1zi da4sheng1 de hou3jiao4.<br>The ____ roared loudly.<br>____ da4sheng1 de hou3jiao4.",
+          "context": null
+        },
+        {
+          "english": "Tiger",
+          "chinese": "老虎",
+          "pinyin": "lao3hu3",
+          "sentence": "Tigers have stripes on their fur.<br>老虎的皮毛上有条纹。<br>Lao3hu3 de pi2mao2 shang4 you3 tiao2wen2.<br>____ have stripes on their fur.<br>____ de pi2mao2 shang4 you3 tiao2wen2.",
+          "context": null
+        },
+        {
+          "english": "Monkey",
+          "chinese": "猴子",
+          "pinyin": "hou2zi",
+          "sentence": "Monkeys love to swing from trees.<br>猴子喜欢在树上荡来荡去。<br>Hou2zi xi3huan zai4 shu4 shang4 dang4 lai2 dang4 qu4.<br>____ love to swing from trees.<br>____ xi3huan zai4 shu4 shang4 dang4 lai2 dang4 qu4.",
+          "context": null
+        },
+        {
+          "english": "Bear",
+          "chinese": "熊",
+          "pinyin": "xiong2",
+          "sentence": "A bear can stand on its hind legs.<br>熊可以两条后腿站立。<br>Xiong2 ke3yi3 liang3 tiao2 hou4tui3 zhan4li4.<br>A ____ can stand on its hind legs.<br>____ ke3yi3 liang3 tiao2 hou4tui3 zhan4li4.",
+          "context": null
+        },
+        {
+          "english": "Horse",
+          "chinese": "马",
+          "pinyin": "ma3",
+          "sentence": "She rode a brown horse.<br>她骑了一匹棕色的马。<br>Ta1 qi2 le yi4 pi1 zong1se4 de ma3.<br>She rode a brown ____.<br>Ta1 qi2 le yi4 pi1 zong1se4 de ____.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-27T23:41:03.627043",
+      "cache_key": "8ed28cbe99d4c0831c785acb640dd499"
+    },
+    {
+      "topic": "animal",
+      "count": 1,
+      "word_pairs": [
+        {
+          "english": "dog",
+          "chinese": "狗",
+          "pinyin": "gǒu3",
+          "sentence": "My dog loves to play fetch.<br>我的狗喜欢玩接球。<br>Wǒ de gǒu xǐhuān wán jiēqiú.<br>我的____喜欢玩接球。<br>Wǒ de ____ xǐhuān wán jiēqiú.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-27T23:42:45.045734",
+      "cache_key": "2f5377a6296234c43761018e88ef6974"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:31:06 - flashcard_generator.cache - [32mINFO[0m - _load_cache:138 - No existing cache file found
+2025-07-27 23:31:06 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards/web/cache, max_age=24h
+2025-07-27 23:31:06 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=flashcards/web/cache, max_age=168h
+2025-07-27 23:31:06 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=flashcards/web/cache, max_age=168h
+2025-07-27 23:31:06 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:31:06 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'dog', count: 10
+2025-07-27 23:31:08 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:31:08 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:31:08 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='dog', count=10
+2025-07-27 23:31:23 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:101 - Successfully generated 10 word pairs for topic: dog
+2025-07-27 23:31:23 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 1 cache entries to disk
+2025-07-27 23:31:23 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 10 word pairs for topic='dog', count=10
+2025-07-27 23:31:23 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 10 word pairs for topic: dog
+2025-07-27 23:31:23 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 10 queries
+2025-07-27 23:31:24 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='dog'
+2025-07-27 23:31:24 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='puppy'
+2025-07-27 23:31:24 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='bark'
+2025-07-27 23:31:24 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/dog_96acae33.jpg
+2025-07-27 23:31:24 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'dog' using unsplash
+2025-07-27 23:31:24 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='leash'
+2025-07-27 23:31:24 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='tail'
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/puppy_8037d3fb.jpg
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'puppy' using unsplash
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/tail_0dfa8c27.jpg
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'tail' using unsplash
+2025-07-27 23:31:25 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='walk'
+2025-07-27 23:31:25 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='feed'
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/bark_c34bc77d.jpg
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'bark' using unsplash
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/leash_a3e7b983.jpg
+2025-07-27 23:31:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'leash' using unsplash
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/feed_690cd4b1.jpg
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'feed' using unsplash
+2025-07-27 23:31:26 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='paw'
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/walk_31a55fa4.jpg
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'walk' using unsplash
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/paw_6b56db6d.jpg
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'paw' using unsplash
+2025-07-27 23:31:26 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='loyal'
+2025-07-27 23:31:26 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='bone'
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/loyal_1462895e.jpg
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'loyal' using unsplash
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: flashcards/web/images/bone_abb4f29f.jpg
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'bone' using unsplash
+2025-07-27 23:31:26 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 10/10 successful in 3.24s
+2025-07-27 23:31:26 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=10, words_generated=10, images_downloaded=10, flashcards_created=10, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:31:06.696221, end_time=2025-07-27 23:31:26.860294
+2025-07-27 23:31:26 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 10 flashcards for topic: dog
+2025-07-27 23:31:26 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 10 rows
+2025-07-27 23:31:26 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 10 flashcards to flashcards/web/flashcards_20250727_233126.csv
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:35:25 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 1 cache entries from disk
+2025-07-27 23:35:25 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards/web/cache, max_age=24h
+2025-07-27 23:35:25 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:35:25 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=flashcards/web/cache, max_age=168h
+2025-07-27 23:35:25 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:35:25 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=flashcards/web/cache, max_age=168h
+2025-07-27 23:35:25 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:35:25 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'dog', count: 2
+2025-07-27 23:35:26 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:35:26 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:35:26 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='dog', count=2
+2025-07-27 23:35:31 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:101 - Successfully generated 2 word pairs for topic: dog
+2025-07-27 23:35:31 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 2 cache entries to disk
+2025-07-27 23:35:31 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 2 word pairs for topic='dog', count=2
+2025-07-27 23:35:31 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 2 word pairs for topic: dog
+2025-07-27 23:35:31 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 2 queries
+2025-07-27 23:35:31 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='dog'
+2025-07-27 23:35:31 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='puppy'
+2025-07-27 23:35:31 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 2/2 successful in 0.00s
+2025-07-27 23:35:31 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=2, words_generated=2, images_downloaded=2, flashcards_created=2, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:35:25.214372, end_time=2025-07-27 23:35:31.151860
+2025-07-27 23:35:31 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 2 flashcards for topic: dog
+2025-07-27 23:35:31 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 2 rows
+2025-07-27 23:35:31 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 2 flashcards to flashcards/web/flashcards_20250727_233531.csv
+2025-07-27 23:36:39 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:36:39 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:36:39 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:36:39 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:36:39 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:36:39 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:36:39 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:36:40 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 2 cache entries from disk
+2025-07-27 23:36:40 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=flashcards/web/cache, max_age=24h
+2025-07-27 23:36:40 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:36:40 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=flashcards/web/cache, max_age=168h
+2025-07-27 23:36:40 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:36:40 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=flashcards/web/cache, max_age=168h
+2025-07-27 23:36:40 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:36:40 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:36:40 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:36:40 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'dog', count: 2
+2025-07-27 23:36:41 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:36:41 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:36:41 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:55 - Cache hit for topic='dog', count=2
+2025-07-27 23:36:41 - flashcard_generator - [32mINFO[0m - generate_flashcards:148 - Cache hit: Retrieved 2 word pairs for topic: dog
+2025-07-27 23:36:41 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 2 queries
+2025-07-27 23:36:41 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='dog'
+2025-07-27 23:36:41 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='puppy'
+2025-07-27 23:36:41 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 2/2 successful in 0.00s
+2025-07-27 23:36:41 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=2, words_generated=2, images_downloaded=2, flashcards_created=2, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:36:40.005886, end_time=2025-07-27 23:36:41.055480
+2025-07-27 23:36:41 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 2 flashcards for topic: dog
+2025-07-27 23:36:41 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 2 rows
+2025-07-27 23:36:41 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 2 flashcards to flashcards/web/flashcards_20250727_233641.csv
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:37:32 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 2 cache entries from disk
+2025-07-27 23:37:32 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=24h
+2025-07-27 23:37:32 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:37:32 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:37:32 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:37:32 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:37:32 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:37:32 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'dog', count: 2
+2025-07-27 23:37:35 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:37:35 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:37:35 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:55 - Cache hit for topic='dog', count=2
+2025-07-27 23:37:35 - flashcard_generator - [32mINFO[0m - generate_flashcards:148 - Cache hit: Retrieved 2 word pairs for topic: dog
+2025-07-27 23:37:35 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 2 queries
+2025-07-27 23:37:35 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='dog'
+2025-07-27 23:37:35 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='puppy'
+2025-07-27 23:37:35 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 2/2 successful in 0.00s
+2025-07-27 23:37:35 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=2, words_generated=2, images_downloaded=2, flashcards_created=2, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:37:32.542487, end_time=2025-07-27 23:37:35.024619
+2025-07-27 23:37:35 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 2 flashcards for topic: dog
+2025-07-27 23:37:35 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 2 rows
+2025-07-27 23:37:35 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 2 flashcards to /home/hengmen/Project/flash_card_generator/flashcards/web/flashcards_20250727_233735.csv
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:38:29 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 2 cache entries from disk
+2025-07-27 23:38:29 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=24h
+2025-07-27 23:38:29 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:38:29 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:38:29 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:38:29 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:38:29 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:38:29 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'dog', count: 2
+2025-07-27 23:38:32 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:38:32 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:38:32 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:55 - Cache hit for topic='dog', count=2
+2025-07-27 23:38:32 - flashcard_generator - [32mINFO[0m - generate_flashcards:148 - Cache hit: Retrieved 2 word pairs for topic: dog
+2025-07-27 23:38:32 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 2 queries
+2025-07-27 23:38:32 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='dog'
+2025-07-27 23:38:32 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='puppy'
+2025-07-27 23:38:32 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 2/2 successful in 0.00s
+2025-07-27 23:38:32 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=2, words_generated=2, images_downloaded=2, flashcards_created=2, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:38:29.367651, end_time=2025-07-27 23:38:32.039519
+2025-07-27 23:38:32 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 2 flashcards for topic: dog
+2025-07-27 23:38:32 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 2 rows
+2025-07-27 23:38:32 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 2 flashcards to /home/hengmen/Project/flash_card_generator/flashcards/web/flashcards_20250727_233832.csv
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:40:49 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 2 cache entries from disk
+2025-07-27 23:40:49 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=24h
+2025-07-27 23:40:49 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:40:49 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:40:49 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 10 image cache entries
+2025-07-27 23:40:49 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:40:49 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:40:49 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animal', count: 10
+2025-07-27 23:40:50 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:40:50 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:40:50 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='animal', count=10
+2025-07-27 23:41:03 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:101 - Successfully generated 10 word pairs for topic: animal
+2025-07-27 23:41:03 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 3 cache entries to disk
+2025-07-27 23:41:03 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 10 word pairs for topic='animal', count=10
+2025-07-27 23:41:03 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 10 word pairs for topic: animal
+2025-07-27 23:41:03 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 10 queries
+2025-07-27 23:41:03 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='Dog'
+2025-07-27 23:41:04 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Dog_96acae33.jpg
+2025-07-27 23:41:04 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Fish'
+2025-07-27 23:41:04 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Elephant'
+2025-07-27 23:41:04 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Fish_6b7a41a7.jpg
+2025-07-27 23:41:04 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Fish' using unsplash
+2025-07-27 23:41:04 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Cat'
+2025-07-27 23:41:04 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Bird'
+2025-07-27 23:41:04 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Lion'
+2025-07-27 23:41:04 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Elephant_7fb22a27.jpg
+2025-07-27 23:41:04 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Elephant' using unsplash
+2025-07-27 23:41:04 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Cat_5ed54e6a.jpg
+2025-07-27 23:41:04 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Cat' using unsplash
+2025-07-27 23:41:05 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Bird_49da6825.jpg
+2025-07-27 23:41:05 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Bird' using unsplash
+2025-07-27 23:41:05 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Tiger'
+2025-07-27 23:41:05 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Lion_d7f2aa8e.jpg
+2025-07-27 23:41:05 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Lion' using unsplash
+2025-07-27 23:41:05 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Monkey'
+2025-07-27 23:41:05 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Bear'
+2025-07-27 23:41:07 - flashcard_generator.cache - [32mINFO[0m - store_image_url:275 - Cached image URL for query='Horse'
+2025-07-27 23:41:07 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Tiger_c88039b1.jpg
+2025-07-27 23:41:07 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Tiger' using unsplash
+2025-07-27 23:41:08 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Horse_d72e5288.jpg
+2025-07-27 23:41:08 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Horse' using unsplash
+2025-07-27 23:41:08 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Bear_50ade5d9.jpg
+2025-07-27 23:41:08 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Bear' using unsplash
+2025-07-27 23:41:09 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _download_image:240 - Successfully downloaded image: /home/hengmen/Project/flash_card_generator/flashcards/web/images/Monkey_47cff8a1.jpg
+2025-07-27 23:41:09 - flashcard_generator.async_image_fetcher - [32mINFO[0m - _fetch_single_image:148 - Successfully fetched image for 'Monkey' using unsplash
+2025-07-27 23:41:09 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 10/10 successful in 5.62s
+2025-07-27 23:41:09 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=10, words_generated=10, images_downloaded=10, flashcards_created=10, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:40:49.099958, end_time=2025-07-27 23:41:09.259019
+2025-07-27 23:41:09 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 10 flashcards for topic: animal
+2025-07-27 23:41:09 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 10 rows
+2025-07-27 23:41:09 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 10 flashcards to /home/hengmen/Project/flash_card_generator/flashcards/web/flashcards_20250727_234109.csv
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:42:38 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 3 cache entries from disk
+2025-07-27 23:42:38 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=24h
+2025-07-27 23:42:38 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 19 image cache entries
+2025-07-27 23:42:38 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:42:38 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 19 image cache entries
+2025-07-27 23:42:38 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:42:38 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:42:38 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animal', count: 1
+2025-07-27 23:42:39 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:42:39 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:42:39 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:62 - Cache miss for topic='animal', count=1
+2025-07-27 23:42:45 - flashcard_generator.gemini_client - [32mINFO[0m - generate_word_pairs:101 - Successfully generated 1 word pairs for topic: animal
+2025-07-27 23:42:45 - flashcard_generator.cache - DEBUG - _save_cache:169 - Saved 4 cache entries to disk
+2025-07-27 23:42:45 - flashcard_generator.cache - [32mINFO[0m - store_word_pairs:83 - Cached 1 word pairs for topic='animal', count=1
+2025-07-27 23:42:45 - flashcard_generator - [32mINFO[0m - generate_flashcards:159 - Generated 1 word pairs for topic: animal
+2025-07-27 23:42:45 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 1 queries
+2025-07-27 23:42:45 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='dog'
+2025-07-27 23:42:45 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 1/1 successful in 0.00s
+2025-07-27 23:42:45 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=1, words_generated=1, images_downloaded=1, flashcards_created=1, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:42:38.221049, end_time=2025-07-27 23:42:45.051704
+2025-07-27 23:42:45 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 1 flashcards for topic: animal
+2025-07-27 23:42:45 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 1 rows
+2025-07-27 23:42:45 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 1 flashcards to /home/hengmen/Project/flash_card_generator/flashcards/web/flashcards_20250727_234245.csv
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:45:10 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 4 cache entries from disk
+2025-07-27 23:45:10 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=24h
+2025-07-27 23:45:10 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 19 image cache entries
+2025-07-27 23:45:10 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:45:10 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 19 image cache entries
+2025-07-27 23:45:10 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:45:10 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:45:10 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animal', count: 1
+2025-07-27 23:45:11 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:45:11 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:45:11 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:55 - Cache hit for topic='animal', count=1
+2025-07-27 23:45:11 - flashcard_generator - [32mINFO[0m - generate_flashcards:148 - Cache hit: Retrieved 1 word pairs for topic: animal
+2025-07-27 23:45:11 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 1 queries
+2025-07-27 23:45:11 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='dog'
+2025-07-27 23:45:11 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 1/1 successful in 0.00s
+2025-07-27 23:45:11 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=1, words_generated=1, images_downloaded=1, flashcards_created=1, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:45:10.334666, end_time=2025-07-27 23:45:11.641578
+2025-07-27 23:45:11 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 1 flashcards for topic: animal
+2025-07-27 23:45:11 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 1 rows
+2025-07-27 23:45:11 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 1 flashcards to /home/hengmen/Project/flash_card_generator/flashcards/web/flashcards_20250727_234511.csv
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - log_system_info:210 - System Information:
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - log_system_info:211 -   Python Version: 3.13.5 (main, Jun 12 2025, 00:00:00) [GCC 15.1.1 20250521 (Red Hat 15.1.1-2)]
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - log_system_info:212 -   Platform: Linux-6.15.7-200.fc42.x86_64-x86_64-with-glibc2.41
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - log_system_info:213 -   Architecture: ('64bit', 'ELF')
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - log_system_info:214 -   Processor: 
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - log_system_info:219 -   google-generativeai: 0.8.5
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - log_system_info:225 -   requests: 2.32.4
+2025-07-27 23:45:31 - flashcard_generator.cache - [32mINFO[0m - _load_cache:151 - Loaded 4 cache entries from disk
+2025-07-27 23:45:31 - flashcard_generator.cache - [32mINFO[0m - __init__:37 - WordPairCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=24h
+2025-07-27 23:45:31 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 19 image cache entries
+2025-07-27 23:45:31 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:45:31 - flashcard_generator.cache - [32mINFO[0m - _load_cache:291 - Loaded 19 image cache entries
+2025-07-27 23:45:31 - flashcard_generator.cache - [32mINFO[0m - __init__:240 - ImageCache initialized with cache_dir=/home/hengmen/Project/flash_card_generator/flashcards/web/cache, max_age=168h
+2025-07-27 23:45:31 - flashcard_generator.async_image_fetcher - [32mINFO[0m - __init__:69 - AsyncImageFetcher initialized with max_concurrent=5, cache=True
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - __init__:80 - FlashcardGenerator initialized successfully
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - __init__:81 - Advanced features: caching=True, async_images=True, batch_processing=True
+2025-07-27 23:45:31 - flashcard_generator - [32mINFO[0m - generate_flashcards:123 - Starting flashcard generation for topic: 'animal', count: 1
+2025-07-27 23:45:33 - flashcard_generator.gemini_client - [32mINFO[0m - authenticate:47 - Successfully authenticated with Gemini API
+2025-07-27 23:45:33 - flashcard_generator - [32mINFO[0m - generate_flashcards:132 - Gemini API authentication successful
+2025-07-27 23:45:33 - flashcard_generator.cache - [32mINFO[0m - get_word_pairs:55 - Cache hit for topic='animal', count=1
+2025-07-27 23:45:33 - flashcard_generator - [32mINFO[0m - generate_flashcards:148 - Cache hit: Retrieved 1 word pairs for topic: animal
+2025-07-27 23:45:33 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:76 - Starting concurrent image fetch for 1 queries
+2025-07-27 23:45:33 - flashcard_generator.cache - [32mINFO[0m - get_image_url:254 - Image cache hit for query='dog'
+2025-07-27 23:45:33 - flashcard_generator.async_image_fetcher - [32mINFO[0m - fetch_images_concurrent:109 - Concurrent image fetch completed: 1/1 successful in 0.00s
+2025-07-27 23:45:33 - flashcard_generator - [32mINFO[0m - log_generation_stats:140 - Generation Stats: total_requested=1, words_generated=1, images_downloaded=1, flashcards_created=1, errors=0, api_errors=0, image_errors=0, validation_errors=0, start_time=2025-07-27 23:45:31.526843, end_time=2025-07-27 23:45:33.869280
+2025-07-27 23:45:33 - flashcard_generator - [32mINFO[0m - generate_flashcards:270 - Successfully created 1 flashcards for topic: animal
+2025-07-27 23:45:33 - flashcard_generator.csv_exporter - [32mINFO[0m - validate_csv_format:112 - CSV data validation passed for 1 rows
+2025-07-27 23:45:33 - flashcard_generator.csv_exporter - [32mINFO[0m - export_flashcards:83 - Successfully exported 1 flashcards to /home/hengmen/Project/flash_card_generator/flashcards/web/flashcards_20250727_234533.csv

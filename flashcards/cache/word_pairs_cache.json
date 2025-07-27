@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "created_at": "2025-07-22T08:20:37.370039",
+  "created_at": "2025-07-23T22:36:58.311729",
   "entries": [
     {
       "topic": "common verb",
@@ -300,6 +300,49 @@
       ],
       "timestamp": "2025-07-22T08:20:37.370039",
       "cache_key": "4cf510e66375f5510b65ad4bb232e462"
+    },
+    {
+      "topic": "animal",
+      "count": 5,
+      "word_pairs": [
+        {
+          "english": "Dog",
+          "chinese": "狗",
+          "pinyin": "gǒu3",
+          "sentence": "A dog is a loyal pet.<br>狗是一种忠诚的宠物。<br>Gǒu shì yī zhǒng zhōngchéng de chǒngwù.<br>我有一只可爱的____。<br>Wǒ yǒu yī zhī kě'ài de ____.",
+          "context": null
+        },
+        {
+          "english": "Cat",
+          "chinese": "猫",
+          "pinyin": "māo1",
+          "sentence": "My cat loves to sleep all day.<br>我的猫喜欢整天睡觉。<br>Wǒ de māo xǐhuan zhěng tiān shuìjiào.<br>这只____很喜欢玩线球。<br>Zhè zhī ____ hěn xǐhuan wán xiànqiú.",
+          "context": null
+        },
+        {
+          "english": "Bird",
+          "chinese": "鸟",
+          "pinyin": "niǎo3",
+          "sentence": "The bird is singing in the tree.<br>小鸟在树上唱歌。<br>Xiǎo niǎo zài shù shàng chànggē.<br>天空中飞着很多____。<br>Tiānkōng zhōng fēizhe hěn duō ____.",
+          "context": null
+        },
+        {
+          "english": "Fish",
+          "chinese": "鱼",
+          "pinyin": "yú2",
+          "sentence": "I like to eat fish for dinner.<br>我晚餐喜欢吃鱼。<br>Wǒ wǎncān xǐhuan chī yú.<br>这条____在水里游。<br>Zhè tiáo ____ zài shuǐ lǐ yóu.",
+          "context": null
+        },
+        {
+          "english": "Horse",
+          "chinese": "马",
+          "pinyin": "mǎ3",
+          "sentence": "A horse can run very fast.<br>马跑得非常快。<br>Mǎ pǎo de fēicháng kuài.<br>他骑着____在草原上奔跑。<br>Tā qí zhe ____ zài cǎoyuán shàng bēnpǎo.",
+          "context": null
+        }
+      ],
+      "timestamp": "2025-07-23T22:36:58.311721",
+      "cache_key": "84a2f6e9fd591afb8be1f8b4711cded6"
     }
   ]
 }

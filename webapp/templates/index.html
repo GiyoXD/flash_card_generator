@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Card Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Flash Card Generator</h1>
+    <form id="flashcard-form">
+        <label for="word">Enter a word or phrase:</label>
+        <input type="text" id="word" name="word" required>
+        <label for="count">Number of flashcards:</label>
+        <input type="number" id="count" name="count" min="1" max="100" value="10" required>
+        <br>
+        <label for="context">Context (optional):</label>
+        <input type="text" id="context" name="context" placeholder="e.g., beginner level">
+        <br>
+        <label for="filename">Custom filename (optional):</label>
+        <input type="text" id="filename" name="filename" placeholder="flashcards.csv">
+        <label for="include_images">
+            <input type="checkbox" id="include_images" name="include_images" checked>
+            Include images
+        </label>
+        <button type="submit">Generate Flashcards</button>
+    </form>
+    <div id="result"></div>
+    <script src="/static/app.js"></script>
+</body>
+</html> 
